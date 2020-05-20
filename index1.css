@@ -1,4 +1,25 @@
 td,
-tr {
+th,
+tr,
+table,
+thead,
+tbody {
     border: 3px solid white;
+}
+
+table {
+    margin: 0px;
+    padding-bottom: 0px
+}
+
+body {
+    font-size: 15.7px;
+    font-family: cursive;
+    margin: 0px
+}
+
+.final {
+    margin-top: 0px;
+    padding-top: 0px;
+    color: black
 }
