@@ -1,0 +1,66 @@
+table,tr,th
+{
+    font-size: 20px;
+    border : 3px solid white !important;
+    padding : 20px !important;
+
+}
+
+#dropper {
+    text-align: center;
+       margin : auto;
+    padding : 50px;
+}
+}
+
+form {
+   
+
+    top: 50%;
+}
+
+select{
+ 
+    padding : 20px 30px 20px 30px;
+    
+
+}
+
+.shown
+{
+    display : grid;
+}
+
+.hidden 
+{
+    display : none;
+}
+
+#info
+{
+    margin-top : 150px;
+}
+
+.btn
+{
+  
+    font-size: 35px !important;
+    color : black !important; 
+    height : 80px;
+    font-weight: bold !important;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav 
+{
+    font-size : 30px;
+   
+}
+
+a{
+    font-size : 30px !important; 
+}
+
+li{
+     padding: 25px !important;
+}
