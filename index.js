@@ -99,8 +99,10 @@ const mydata = async (team) => {
 							],
 
 							backgroundColor: [ 'red', 'blue', 'yellow', 'green' ],
-							borderColor: [ 'black', 'black', 'black', 'black' ],
-							borderWidth: 5
+							hoverBorderColor: 'black',
+							hoverBorderWidth: 10,
+							borderColor: 'white',
+							borderWidth: 2
 						}
 					]
 				},
@@ -134,11 +136,17 @@ const mydata = async (team) => {
 const teams = document.querySelector('.teams');
 const team = document.querySelector('.team');
 let canvas = document.querySelector('canvas');
+
 teams.addEventListener('change', (event) => {
+      
 	deleteChild(players);
 	deleteChild(info);
-	deleteChild(canvas);
-	window.selectedTeam = event.target.value;
+    deleteChild(canvas);
+    window.selectedTeam = event.target.value;
+    if(event.target.value == "Select") {
+        stats.classList.add('hidden');
+        return;
+    }
 	canvas = document.createElement('canvas');
 	canvas.setAttribute('id', 'myChart');
 	mydata(event.target.value);
@@ -151,7 +159,7 @@ let info = document.querySelector('#info');
 
 for (let i = 0; i < 4; i++) {
 	window.myarr[i].addEventListener('click', (event) => {
-		deleteChild(info);
+        deleteChild(info);
 
 		console.log(window.role[i], window.selectedTeam);
 		const url = `https://indipl2020.herokuapp.com/ipl2020/team/${window.selectedTeam}/${window.role[i]}`;
