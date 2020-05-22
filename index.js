@@ -53,7 +53,7 @@ const mydata = async (team) => {
 	fetch('https://indipl2020.herokuapp.com/ipl2020/team/players/all', {
 		headers: {
 			Authorization:
-				'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE1OTAxMzk0MTQsImlhdCI6MTU5MDEyMTQxNH0.1zcC4mDLbdGw_eYcrtw_NHRjJWx0dnb2IKREgd2z98fyNHScqhn-fgSBrPSVhRfBRfC_VcwaCYlesGBexEBN_w'
+				'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE1OTAxNTc3MDAsImlhdCI6MTU5MDEzOTcwMH0.IVo0INTAYPLBZfBSUqIXIEDdkBCNziiav_BAoMT6QjTTesP0VLv6OVLmpD63S5tbFdNgF2JbL_jpvAP2XGcuBw'
 		}
 	})
 		.then((res) => res.json())
@@ -168,7 +168,7 @@ for (let i = 0; i < 4; i++) {
 		fetch(url, {
 			headers: {
 				Authorization:
-					'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE1OTAxMzk0MTQsImlhdCI6MTU5MDEyMTQxNH0.1zcC4mDLbdGw_eYcrtw_NHRjJWx0dnb2IKREgd2z98fyNHScqhn-fgSBrPSVhRfBRfC_VcwaCYlesGBexEBN_w'
+					'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE1OTAxNTc3MDAsImlhdCI6MTU5MDEzOTcwMH0.IVo0INTAYPLBZfBSUqIXIEDdkBCNziiav_BAoMT6QjTTesP0VLv6OVLmpD63S5tbFdNgF2JbL_jpvAP2XGcuBw'
 			}
 		})
 			.then((res) => res.json())
