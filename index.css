@@ -1,7 +1,7 @@
 table,tr,th
 {
     font-size: 20px;
-    border : 3px solid white !important;
+    border : 3px solid black !important;
     padding : 20px !important;
 
 }
@@ -33,12 +33,13 @@ select{
 
 .hidden 
 {
-    display : none;
+    display : none !important;
 }
 #info
 {
-    margin-top:20px;
-    margin-bottom: 20px;
+    padding-top:0px !important;
+    margin : auto;
+    
 }
 
 
@@ -51,12 +52,7 @@ select{
     font-weight: bold !important;
     font-family: 'Courier New', Courier, monospace;
 }
-#myChart
-{
-    width : 800px !important;
-    height : 400px !important;
-    margin-left : 30px !important;
-}
+
 
 nav 
 {
@@ -70,4 +66,22 @@ a{
 
 li{
      padding: 25px !important;
+}
+
+.table2
+{
+    margin-top : 30px !important;
+    padding-top: 30px !important;
+}
+
+.table2:hover{
+    background-color:black;
+    color: white !important;
+    
+}
+
+#myChart:hover
+{
+      cursor: url("/uploads/media/default/0001/02/ea8020fd3fdb96affa77c8164f80d88f8c419e0f.png"), auto;
+    
 }
