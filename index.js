@@ -123,7 +123,7 @@ const mydata = async (team) => {
 					},
 					legend: {
 						labels: {
-							fontSize: 30,
+							fontSize: 20,
 							fontColor: 'black'
 						}
 					}
