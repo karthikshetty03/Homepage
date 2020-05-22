@@ -138,11 +138,12 @@ const teams = document.querySelector('.teams');
 const team = document.querySelector('.team');
 let canvas = document.querySelector('canvas');
 
+
 teams.addEventListener('change', (event) => {
 	deleteChild(players);
 	deleteChild(info);
 	deleteChild(team);
-
+	
 	window.selectedTeam = event.target.value;
 	if (event.target.value == 'Select') {
 		stats.classList.add('hidden');

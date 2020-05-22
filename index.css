@@ -1,4 +1,15 @@
+body{
 
+overflow-x: hidden;
+
+}
+img{
+    width : 200px;
+    height : 100px;
+    margin :aut0;
+    display : block;
+
+}
 table,tr,th
 {
     
@@ -66,6 +77,14 @@ select{
 nav 
 {
     font-size : 30px;
+    margin : 0px  !important;
+    padding : 0px;
+    color : black !important;
+    font-weight: bolder !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+
+
+
    
 }
 
