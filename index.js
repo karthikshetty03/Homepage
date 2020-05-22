@@ -28,7 +28,8 @@ const addContentsToTable = (tablename, ...arr) => {
 	if (arr[4]) {
 		let thead = document.createElement('thead');
 		thead.classList.add('thead-dark');
-		table.classList.add('table-striped');
+        table.classList.add('table-striped');
+        table.classList.add('md');
 		table.appendChild(thead);
 		key = thead;
 	} else {
