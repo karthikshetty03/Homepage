@@ -1,8 +1,11 @@
+
+
 table,tr,th
 {
     font-size: 20px;
     border : 3px solid black !important;
     padding : 20px !important;
+    margin : auto;
 
 }
 
