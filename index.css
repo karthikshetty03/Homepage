@@ -35,11 +35,12 @@ select{
 {
     display : none;
 }
-
 #info
 {
-    margin-top : 150px;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
+
 
 .btn
 {
@@ -49,6 +50,12 @@ select{
     height : 80px;
     font-weight: bold !important;
     font-family: 'Courier New', Courier, monospace;
+}
+#myChart
+{
+    width : 800px !important;
+    height : 400px !important;
+    margin-left : 30px !important;
 }
 
 nav 
