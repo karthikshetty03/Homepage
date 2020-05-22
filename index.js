@@ -189,8 +189,6 @@ for (let i = 0; i < 4; i++) {
 				console.log(err);
 			});
 
-		var canvas = document.createElement('canvas');
-		canvas.setAttribute('id', 'myChart');
-		team.appendChild(canvas);
+		
 	});
 }

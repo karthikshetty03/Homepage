@@ -77,11 +77,5 @@ li{
 .table2:hover{
     background-color:black;
     color: white !important;
-    
-}
-
-#myChart:hover
-{
-      cursor: url("/uploads/media/default/0001/02/ea8020fd3fdb96affa77c8164f80d88f8c419e0f.png"), auto;
-    
+    border: 3px solid white;
 }
