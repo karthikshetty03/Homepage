@@ -141,7 +141,8 @@ teams.addEventListener('change', (event) => {
       
 	deleteChild(players);
 	deleteChild(info);
-    deleteChild(canvas);
+    deleteChild(team);
+
     window.selectedTeam = event.target.value;
     if(event.target.value == "Select") {
         stats.classList.add('hidden');
