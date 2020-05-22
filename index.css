@@ -8,12 +8,17 @@ table,tr,th
     
 
 }
-
-#dropper {
-    text-align: center;
-       margin : auto;
-    padding : 50px;
+#dropper
+{
+    padding : 100px;
 }
+
+.card
+{
+    font-size: 30px;;
+    text-align: center;
+       margin:auto;
+    padding-top : 20px !important;
 }
 
 form {
@@ -48,7 +53,7 @@ select{
 
 .btn
 {
-  
+    
     font-size: 35px !important;
     color : black !important; 
     height : 80px;
@@ -81,4 +86,8 @@ li{
     background-color:black;
     color: white !important;
     border: 3px solid white;
+}
+select:hover
+{
+    color: white !important;
 }

@@ -28,8 +28,8 @@ const addContentsToTable = (tablename, ...arr) => {
 	if (arr[4]) {
 		let thead = document.createElement('thead');
 		thead.classList.add('thead-dark');
-        table.classList.add('table-striped');
-        table.classList.add('md');
+		table.classList.add('table-striped');
+		table.classList.add('md');
 		table.appendChild(thead);
 		key = thead;
 	} else {
@@ -139,16 +139,15 @@ const team = document.querySelector('.team');
 let canvas = document.querySelector('canvas');
 
 teams.addEventListener('change', (event) => {
-      
 	deleteChild(players);
 	deleteChild(info);
-    deleteChild(team);
+	deleteChild(team);
 
-    window.selectedTeam = event.target.value;
-    if(event.target.value == "Select") {
-        stats.classList.add('hidden');
-        return;
-    }
+	window.selectedTeam = event.target.value;
+	if (event.target.value == 'Select') {
+		stats.classList.add('hidden');
+		return;
+	}
 	canvas = document.createElement('canvas');
 	canvas.setAttribute('id', 'myChart');
 	mydata(event.target.value);
@@ -161,7 +160,7 @@ let info = document.querySelector('#info');
 
 for (let i = 0; i < 4; i++) {
 	window.myarr[i].addEventListener('click', (event) => {
-        deleteChild(info);
+		deleteChild(info);
 
 		console.log(window.role[i], window.selectedTeam);
 		const url = `https://indipl2020.herokuapp.com/ipl2020/team/${window.selectedTeam}/${window.role[i]}`;
@@ -190,7 +189,7 @@ for (let i = 0; i < 4; i++) {
 			.catch((err) => {
 				console.log(err);
 			});
-
-		
 	});
 }
+
+
