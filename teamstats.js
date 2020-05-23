@@ -44,6 +44,7 @@ fetch('https://indipl2020.herokuapp.com/ipl2020/team/all', {
 		}
 
 		var ctx = document.getElementById('myChart');
+		ctx.height = 330;
 		var myChart = new Chart(ctx, {
 			type: 'bar',
 			data: {
@@ -69,6 +70,9 @@ fetch('https://indipl2020.herokuapp.com/ipl2020/team/all', {
 				]
 			},
 			options: {
+					tooltips: {
+						mode: 'nearest'
+					},
 				scales: {
 					yAxes: [
 						{
