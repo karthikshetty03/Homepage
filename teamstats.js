@@ -1,7 +1,6 @@
-if(!localStorage.getItem('currentUser'))
-{
-	alert("You need to login first");
-	window.location = "index.html"
+if (!localStorage.getItem('currentUser')) {
+	alert('You need to login first');
+	window.location = 'index.html';
 }
 
 User.innerText = `Hello, ${localStorage.getItem('currentUser')}`;
@@ -18,8 +17,6 @@ fetch('https://indipl2020.herokuapp.com/ipl2020/team/totalamount', {
 			window.amount.set(teamName, amount);
 		});
 	});
-
-
 
 fetch('https://indipl2020.herokuapp.com/ipl2020/team/all', {
 	headers: {
@@ -45,6 +42,69 @@ fetch('https://indipl2020.herokuapp.com/ipl2020/team/all', {
 
 			j++;
 		}
+
+		var ctx = document.getElementById('myChart');
+		var myChart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: [ 'DC', 'RCB', 'MI', 'CSK', 'RR', 'KKR', 'SRH', 'KXIP' ],
+				datasets: [
+					{
+						label: 'Total amount spent on all players',
+						data: [
+							760000000,
+							786000000,
+							830500000,
+							848500000,
+							702500000,
+							765000000,
+							749000000,
+							645000000
+						],
+						backgroundColor: [ 'green', 'red', 'blue', 'yellow', 'orange', 'aqua', 'purple', 'teal' ],
+						borderColor: 'black',
+						borderWidth: 1,
+						hoverBorderWidth: 5
+					}
+				]
+			},
+			options: {
+				scales: {
+					yAxes: [
+						{
+							ticks: {
+								beginAtZero: true,
+								fontSize: 30,
+								fontColor: 'black'
+							},
+						gridLines: {
+								color: 'black'
+							}
+						
+
+						}
+					],
+					xAxes: [
+						{
+							ticks: {
+								beginAtZero: true,
+								fontSize: 30,
+								fontColor: 'black'
+							},
+							gridLines: {
+								color: 'black'
+							}
+						}
+					]
+				},
+				legend: {
+					labels: {
+						fontSize: 30,
+						fontColor: 'black'
+					}
+				}
+			}
+		});
 	});
 
 //Utility function to delte all children of an element

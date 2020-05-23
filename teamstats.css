@@ -25,13 +25,13 @@ li{
 
 
 th,td{
-    font-size: 26px;
+    font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     
 }
 
-thead,tr,th,table,tbody,td{
+tr,th,table,tbody,td{
      padding : 20px !important;
        border : 2px solid blue !important;
     
@@ -40,7 +40,12 @@ thead,tr,th,table,tbody,td{
 table{
     margin-top : 50px !important;
      text-align: center !important;
+     margin-bottom : 50px !important;
    
+}
+thead{
+     text-align: center !important;
+     white-space: nowrap;
 }
 .headline
 {
