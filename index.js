@@ -22,7 +22,6 @@ form.addEventListener('submit', async (event) => {
 
 	event.preventDefault();
 	localStorage.setItem('currentUser', username.value);
-	console.log(username.value);
 	MY_SECRET_API_KEY = await makeAreq();
 	MY_SECRET_API_KEY = MY_SECRET_API_KEY.token;
 	localStorage.setItem('Authorization', `Bearer ${MY_SECRET_API_KEY}`);

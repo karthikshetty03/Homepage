@@ -1,12 +1,11 @@
 const players = document.querySelector('#players');
 const stats = document.querySelector('#stats');
 const User = document.querySelector('#User');
-console.log(localStorage);
+
+
 User.innerText = `Hello, ${localStorage.getItem('currentUser')}`;
 var myarr = [];
 var role = [ 'Batsman', 'All-Rounder', 'Bowler', 'Wicket Keeper' ];
-
-
 
 
 var selectedTeam;
