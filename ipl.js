@@ -1,7 +1,13 @@
 const players = document.querySelector('#players');
 const stats = document.querySelector('#stats');
+const User = document.querySelector('#User');
+console.log(localStorage);
+User.innerText = `Hello, ${localStorage.getItem('currentUser')}`;
 var myarr = [];
 var role = [ 'Batsman', 'All-Rounder', 'Bowler', 'Wicket Keeper' ];
+
+
+
 
 var selectedTeam;
 myarr.push(document.querySelector('#one'));
@@ -52,8 +58,7 @@ const mydata = async (team) => {
 
 	fetch('https://indipl2020.herokuapp.com/ipl2020/team/players/all', {
 		headers: {
-			Authorization:
-				'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE1OTAxODQ2OTYsImlhdCI6MTU5MDE2NjY5Nn0.R6_fuT-i_Ab5Rs88X-0QxuwBv6coudAh6jpD-LvaH6hE_k46UJfgk-CapypmlNnDFZ-nCODprf8yVjP94ixWjw'
+			Authorization: localStorage.getItem('Authorization')
 		}
 	})
 		.then((res) => res.json())
@@ -167,8 +172,7 @@ for (let i = 0; i < 4; i++) {
 		const url = `https://indipl2020.herokuapp.com/ipl2020/team/${window.selectedTeam}/${window.role[i]}`;
 		fetch(url, {
 			headers: {
-				Authorization:
-					'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE1OTAxODQ2OTYsImlhdCI6MTU5MDE2NjY5Nn0.R6_fuT-i_Ab5Rs88X-0QxuwBv6coudAh6jpD-LvaH6hE_k46UJfgk-CapypmlNnDFZ-nCODprf8yVjP94ixWjw'
+				Authorization: localStorage.getItem('Authorization')
 			}
 		})
 			.then((res) => res.json())

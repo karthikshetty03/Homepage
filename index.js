@@ -40,9 +40,13 @@ form.addEventListener('submit', async (event) => {
 	}
 
     localStorage.setItem(username.value, password.value);
+    localStorage.setItem("currentUser", username.value);
+
      MY_SECRET_API_KEY = await makeAreq();
      MY_SECRET_API_KEY = MY_SECRET_API_KEY.token;
-    console.log(MY_SECRET_API_KEY);
+     localStorage.setItem("Authorization",`Bearer ${MY_SECRET_API_KEY}`);
+     window.location.href = "ipl.html";
+
 
     
     
