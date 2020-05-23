@@ -112,3 +112,10 @@ select:hover
     color: white !important;
 }
 
+.headline
+{
+    padding : 20px;
+    font-family: 'Courier New', Courier, monospacex;
+    display:block;
+    margin : auto;
+}
