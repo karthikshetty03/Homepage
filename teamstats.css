@@ -1,0 +1,41 @@
+body{
+
+overflow-x: hidden;
+
+}
+
+nav 
+{
+    font-size : 30px;
+    margin : 0px  !important;
+    padding : 0px;
+    color : black !important;
+    font-weight: bolder !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+
+}
+
+a{
+    font-size : 30px !important; 
+}
+
+li{
+     padding: 25px !important;
+}
+
+th,td{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+}
+
+thead,tr,th,table,tbody{
+     padding : 10px !important;
+    
+}
+
+table{
+    margin : 5px;
+     text-align: center !important;
+}
