@@ -3,6 +3,12 @@ const stats = document.querySelector('#stats');
 const User = document.querySelector('#User');
 
 //display greeting
+if(!localStorage.getItem('currentUser'))
+{
+	alert("You need to login first");
+	window.location = "index.html"
+}
+
 User.innerText = `Hello, ${localStorage.getItem('currentUser')}`;
 var myarr = [];
 var role = [ 'Batsman', 'All-Rounder', 'Bowler', 'Wicket Keeper' ];

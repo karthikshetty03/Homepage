@@ -1,3 +1,10 @@
+if(!localStorage.getItem('currentUser'))
+{
+	alert("You need to login first");
+	window.location = "index.html"
+}
+
+User.innerText = `Hello, ${localStorage.getItem('currentUser')}`;
 var amount = new Map();
 fetch('https://indipl2020.herokuapp.com/ipl2020/team/totalamount', {
 	headers: {
@@ -11,6 +18,8 @@ fetch('https://indipl2020.herokuapp.com/ipl2020/team/totalamount', {
 			window.amount.set(teamName, amount);
 		});
 	});
+
+
 
 fetch('https://indipl2020.herokuapp.com/ipl2020/team/all', {
 	headers: {

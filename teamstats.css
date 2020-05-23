@@ -23,19 +23,28 @@ li{
      padding: 25px !important;
 }
 
+
 th,td{
-    font-size: 25px;
+    font-size: 26px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     
 }
 
-thead,tr,th,table,tbody{
-     padding : 10px !important;
+thead,tr,th,table,tbody,td{
+     padding : 20px !important;
+       border : 2px solid blue !important;
     
 }
 
 table{
-    margin : 5px;
+    margin-top : 50px !important;
      text-align: center !important;
+   
+}
+.headline
+{
+    text-align: center;
+    padding : 20px;
+    
 }
