@@ -39,7 +39,8 @@ const addContentsToTable = (tablename, ...arr) => {
 	let table = document.querySelector(`.${tablename}`);
 	if (arr[4]) {
 		let thead = document.createElement('thead');
-		thead.classList.add('thead-dark');
+		thead.classList.add('bg-primary');
+		thead.classList.add('text-white');
 		table.classList.add('table-striped');
 		table.classList.add('md');
 		table.appendChild(thead);
