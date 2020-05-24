@@ -113,8 +113,8 @@ span {
      margin-right: 30px;
     text-align: center !important;
     padding-bottom: 100px;
-    padding-top: 50px;;
-    background-color: wheat;
+    padding-top: 50px;
+ background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
     
 }
 .spc
