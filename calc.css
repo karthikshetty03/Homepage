@@ -1,0 +1,68 @@
+body {
+    
+    background-color : gold;
+}
+
+nav{
+    margin-bottom : 45px;
+    font-size: 25px;
+
+}
+.nav-item
+{
+    padding : 10px
+}
+
+.custom1
+{
+    display : grid;
+    justify-content: center;
+    margin : auto;
+    background-color:navajowhite;
+    padding : 100px;
+    background-color: black;
+   
+}
+
+.myform
+{
+    
+    justify-content: center;
+    margin:auto;
+    padding-top: 250px;
+    display:flex;
+    width : 300px;
+    height : 350px;
+}
+
+input {
+    border: 5px solid black !important;
+    font-weight:bold;
+    font-size: 50px !important;
+}
+
+.hidden
+{
+    display : none;
+}
+
+.displ
+{
+    display : flex;
+}
+
+.contact
+{
+    padding-left:900px;
+    display : flex;
+   
+}
+
+.c{
+    padding-right : 50px
+}
+
+
+
+
+

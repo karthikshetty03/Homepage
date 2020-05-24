@@ -15,6 +15,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
     white-space: nowrap;
     
 }
+#wow
+{
+    margin-top : -50px;
+    margin-right: 20px;
+    padding:10px;
+}
+
 
 .row
 {
@@ -126,5 +133,6 @@ span {
 {
     display: flex;
     margin: auto;
+  
     justify-content : center;
 }

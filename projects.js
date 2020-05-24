@@ -12,11 +12,12 @@ card2 = document.querySelector('#card2');
 
 card1.addEventListener('click', (event) => {
 	console.log(event);
+	window.location = "calc.html";
 
 });
 
 card2.addEventListener('click', (event) => {
 	console.log(event);
-
+	window.location = "playerstats.html";
 });
 
