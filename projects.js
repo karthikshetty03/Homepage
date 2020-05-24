@@ -6,3 +6,17 @@ if(!localStorage.getItem('currentUser'))
 }
 
 User.innerText = `Hello, ${localStorage.getItem('currentUser')}`;
+
+card1 = document.querySelector('#card1');
+card2 = document.querySelector('#card2');
+
+card1.addEventListener('click', (event) => {
+	console.log(event);
+
+});
+
+card2.addEventListener('click', (event) => {
+	console.log(event);
+
+});
+

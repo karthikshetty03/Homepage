@@ -32,13 +32,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 h2{
     font-size: 30px !important;
     font-family: 'Courier New', Courier, monospace !important;
-    font-weight: bolder;
+    font-weight: bolder !important;
 }
 
 img{
     height : 400px !important;
     width: 170px !important;
-    border-radius: 100px !important;
+    border-radius: 80px !important;
      margin-top : 35px !important;
     
 }
@@ -119,7 +119,7 @@ span {
 }
 .spc
 {
-    padding-bottom: 30px;
+    padding-bottom: 31px;
 }
 
 .cons
