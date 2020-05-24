@@ -25,15 +25,16 @@ li{
 
 
 th,td{
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     
 }
 
+
 tr,th,table,tbody,td{
      padding : 20px !important;
-       border : 2px solid blue !important;
+       border : 3px solid blue !important;
     
 }
 
@@ -47,9 +48,18 @@ thead{
      text-align: center !important;
      white-space: nowrap;
 }
+
 .headline
 {
     text-align: center;
     padding : 20px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
     
 }
+
+tr:hover{
+    color : white !important;
+    background-color: black;
+}
+

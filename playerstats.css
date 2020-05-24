@@ -14,7 +14,7 @@ table,tr,th
 {
     
     font-size: 20px;
-    border : 3px solid black !important;
+    border : 3px solid blue !important;
     padding : 20px !important;
     
 
@@ -122,8 +122,8 @@ select:hover
 
 .headline
 {
+    text-align: center;
     padding : 20px;
-    font-family: 'Courier New', Courier, monospacex;
-    display:block;
-    margin : auto;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
 }

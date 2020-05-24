@@ -1,5 +1,7 @@
 const username = document.querySelector('#username');
 const form = document.querySelector('form');
+
+
 let MY_SECRET_API_KEY;
 const makeAreq = async () => {
 	var headers = {
